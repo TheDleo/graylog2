@@ -54,7 +54,7 @@ apt-get -y install git curl apache2 libcurl4-openssl-dev apache2-prefork-dev lib
 echo "Downloading Elasticsearch"
 # chown -R $USER:$USER /opt
 cd /opt
-git clone https://github.com/elasticsearch/elasticsearch-servicewrapper.git
+git clone -b 0.90 https://github.com/elasticsearch/elasticsearch-servicewrapper.git
 
 # Download Elasticsearch, Graylog2-Server and Graylog2-Web-Interface
 echo "Downloading Elastic Search, Graylog2-Server and Graylog2-Web-Interface to /opt"
